@@ -1,0 +1,5 @@
+# Use the jupyter/datascience-notebook base image
+FROM jupyter/datascience-notebook
+
+# Set the command to run Jupyter Notebook when the container starts
+CMD ["jupyter", "notebook", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root"]
